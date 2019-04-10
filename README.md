@@ -1,4 +1,4 @@
-# learnWithTortoise
+# LearnWithTortoise
 
 This project help to present how to work basic programming component like if, while, for ...etc.
 
