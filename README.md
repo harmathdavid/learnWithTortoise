@@ -4,12 +4,10 @@ This project help to present how to work basic programming component like if, wh
 
 Implementatinon exalple:
 
-static void Main(string[] args)
-        {
+static void Main(string[] args){
             Tortoise.InitaializeComponents();
 
-            for (int i = 0; i < 10; i++)
-            {
+            for (int i = 0; i < 10; i++){
                 Tortoise.StepForward();
             }
             
