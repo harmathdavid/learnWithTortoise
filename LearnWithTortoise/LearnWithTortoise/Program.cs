@@ -10,6 +10,9 @@ namespace LearnWithTortoise
     {
         static void Main(string[] args)
         {
+            Tortoise.InitaializeComponents();
+
+            Console.ReadLine();
         }
     }
 }
