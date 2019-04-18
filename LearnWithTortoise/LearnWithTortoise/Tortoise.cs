@@ -11,16 +11,16 @@ namespace LearnWithTortoise
         static int X { get; set; }
         static int Y { get; set; }
 
-        const int StepSize = 3;
+        const int StepSize = 1;
 
-        public static void InitaializeComponents()
+        static Tortoise()
         {
             Console.Clear();
             X = Console.WindowWidth / 2;
             Y = Console.WindowHeight / 2;
             Console.SetCursorPosition(X, Y);
 
-            Console.Write("O");
+            DrawTortoise();
         }
 
         static void Core()
@@ -32,7 +32,7 @@ namespace LearnWithTortoise
             {
 
                 Console.SetCursorPosition(X, Y);
-                Console.Write("O");
+                DrawTortoise();
             }
             else
             {
@@ -44,6 +44,13 @@ namespace LearnWithTortoise
                 Thread.Sleep(3000);
                 Environment.Exit(0);
             }
+        }
+
+        static void DrawTortoise()
+        {
+            Console.Write(@"\o/");
+            Console.SetCursorPosition(Console.CursorLeft-4, Console.CursorTop + 1);
+            Console.Write(@"-( )-");
         }
 
         public static void StepForward()

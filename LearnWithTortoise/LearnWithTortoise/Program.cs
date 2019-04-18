@@ -10,7 +10,10 @@ namespace LearnWithTortoise
     {
         static void Main(string[] args)
         {
-            Tortoise.InitaializeComponents();
+            Tortoise.StepForward();
+            Tortoise.StepRight();
+            Tortoise.StepBackward();
+            Tortoise.StepLeft();
 
             Console.ReadLine();
         }
