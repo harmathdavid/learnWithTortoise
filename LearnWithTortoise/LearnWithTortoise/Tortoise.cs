@@ -6,7 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 namespace LearnWithTortoise
 {
-    class Tortoise
+    public class Tortoise
     {
         static int X { get; set; }
         static int Y { get; set; }
