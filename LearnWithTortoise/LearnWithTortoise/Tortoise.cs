@@ -28,7 +28,7 @@ namespace LearnWithTortoise
             Thread.Sleep(1000);
 
             Console.Clear();
-            if ((X < Console.WindowWidth-4 && X > 0) && (Y < Console.WindowHeight && Y > 0))
+            if ((X < Console.WindowWidth - 4 && X > 0) && (Y < Console.WindowHeight && Y > 0))
             {
 
                 Console.SetCursorPosition(X, Y);
@@ -49,7 +49,7 @@ namespace LearnWithTortoise
         static void DrawTortoise()
         {
             Console.Write(@"\o/");
-            Console.SetCursorPosition(Console.CursorLeft-4, Console.CursorTop + 1);
+            Console.SetCursorPosition(Console.CursorLeft - 4, Console.CursorTop + 1);
             Console.Write(@"-( )-");
         }
 
@@ -75,6 +75,17 @@ namespace LearnWithTortoise
         {
             X += StepSize;
             Core();
+        }
+
+        public static bool NextStepIsWall()
+        {
+            if ((X == Console.WindowWidth - 5 || X == 1) || (Y == Console.WindowHeight - 1 || Y == 1))
+            {
+                return true;
+            }
+
+
+            return false;
         }
 
     }

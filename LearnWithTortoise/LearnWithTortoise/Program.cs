@@ -15,6 +15,11 @@ namespace LearnWithTortoise
             Tortoise.StepBackward();
             Tortoise.StepLeft();
 
+            while (!Tortoise.NextStepIsWall())
+            {
+                Tortoise.StepBackward();
+            }
+
             Console.ReadLine();
         }
     }
