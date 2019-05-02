@@ -28,7 +28,7 @@ namespace LearnWithTortoise
             Thread.Sleep(1000);
 
             Console.Clear();
-            if ((X < Console.WindowWidth && X > 0) && (Y < Console.WindowHeight && Y > 0))
+            if ((X < Console.WindowWidth-4 && X > 0) && (Y < Console.WindowHeight && Y > 0))
             {
 
                 Console.SetCursorPosition(X, Y);
